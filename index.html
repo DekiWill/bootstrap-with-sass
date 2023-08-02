@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
 </head>
 
 <body>
@@ -73,7 +74,7 @@
         <div class="col-md-6 intros text-end">
           <div class="video-box">
             <img src="/images/arts/intro-section-illustration.png" alt="video illustration" class="img-fluid">
-            <a href="#" class="position-absolute top-50 start-50">
+            <a href="#" class="glightbox position-absolute top-50 start-50">
               <span>
                 <i class="fas fa-play-circle"></i>
               </span>
@@ -89,7 +90,18 @@
 
 
 
-
+  <script src="/assets/vendors/js/glightbox.min.js"></script>
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'touchNavigation': true,
+      'href': 'https://www.youtube.com/watch?v=Ip8yyw1xYjE',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoPlayVideos': 'true',
+});
+  
+  </script>
   <script src="/assets/js/bootstrap.bundle.js"></script>
 </body>
 
