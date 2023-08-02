@@ -10782,6 +10782,12 @@ textarea.form-control-lg {
   display: block;
   margin-top: 1.2rem;
 }
+@media (min-width: 992px) {
+  .display-2--description {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+}
 
 .menu {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
